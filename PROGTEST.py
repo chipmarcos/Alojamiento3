@@ -3,11 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Ruta del archivo en local
-LOCAL_PATH = r"C:\Users\Marcos\Desktop\PROG2\integridad.xlsx"
-
-@st.cache_data
-def cargar_datos():
-    return pd.read_excel(LOCAL_PATH)
+FILE_PATH = "integridad.xlsx"
 
 df = cargar_datos()
 
