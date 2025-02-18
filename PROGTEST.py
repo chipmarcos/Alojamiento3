@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Ruta del archivo en local
-FILE_PATH = "integridad.xlsx"
+FILE_PATH = "integridad.csv"
 
 df = cargar_datos()
 
