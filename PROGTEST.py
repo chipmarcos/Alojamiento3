@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 # Ruta del archivo en local
 FILE_PATH = "integridad.csv"
 
-df = cargar_datos()
+def cargar_datos():
+    # Lee el archivo CSV y retorna un DataFrame
+    return pd.read_csv(FILE_PATH)
 
 # Crear filtros de forma progresiva
 st.title("Dashboard de Integridad Académica")
