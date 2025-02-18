@@ -2,12 +2,14 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Ruta del archivo en local
-FILE_PATH = "integridad.csv"
+# URL del archivo en GitHub
+GITHUB_URL = "https://raw.githubusercontent.com/chipmarcos/Alojamiento3/main/integridad.csv"
 
+@st.cache_data
 def cargar_datos():
-    # Lee el archivo CSV y retorna un DataFrame
-    return pd.read_csv(FILE_PATH)
+    return pd.read_csv(GITHUB_URL)
+
+df = cargar_datos()
 
 # Crear filtros de forma progresiva
 st.title("Dashboard de Integridad Académica")
